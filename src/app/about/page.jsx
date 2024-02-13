@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion, useInView, useScroll } from "framer-motion";
 import Brain from "../components/brain";
 import { useRef } from "react";
 
@@ -9,6 +9,12 @@ const AboutPage = () => {
   const containerRef = useRef();
 
   const { scrollYProgress } = useScroll({ container: containerRef });
+
+  const skillRef = useRef();
+  const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
+
+  const experienceRef = useRef();
+  const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
     <motion.div
@@ -140,11 +146,22 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* Skills Container */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* Skill Title */}
-            <h1 className="font-bold text-2xl">SKILLS</h1>
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              SKILLS
+            </motion.h1>
             {/* Skill List */}
-            <div className="flex gap-4 flex-wrap">
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              className="flex gap-4 flex-wrap"
+            >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
               </div>
@@ -199,7 +216,7 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Git
               </div>
-            </div>
+            </motion.div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -225,9 +242,19 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* Experience Container */}
-          <div className="flex flex-col gap-12 justify-center pb-48">
+          <div
+            className="flex flex-col gap-12 justify-center pb-48"
+            ref={experienceRef}
+          >
             {/* Experience Title */}
-            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+            <motion.h1
+              initial={{ x: "-300px " }}
+              animate={isExperienceRefInView ? { x: "0" } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              EXPERIENCE
+            </motion.h1>
             {/* Experience List */}
             <div className="">
               {/* EXPERIENCE LIST ITEM */}
