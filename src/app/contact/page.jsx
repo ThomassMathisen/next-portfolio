@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const text = "Say Hello";
+  const text = "Say Hello ";
 
   const form = useRef();
 
@@ -75,6 +75,7 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
             required
+            autoFocus
           />
           <span>My mail address is:</span>
           <input

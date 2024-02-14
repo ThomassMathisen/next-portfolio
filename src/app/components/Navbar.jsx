@@ -91,10 +91,10 @@ const Navbar = () => {
       </div>
       {/* Social Links */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
+        <Link href="https://github.com/ThomassMathisen">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/thomas-storbakk-mathisen-315617106/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
       <div className="md:hidden"></div>
       {/* Menu Button */}
       <button
-        className="w-10 h-8 flex flex-col justify-between z-50 relative"
+        className="w-10 h-8 flex flex-col justify-between z-50 relative md:hidden"
         onClick={() => setOpen(!open)}
       >
         <motion.div
