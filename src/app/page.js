@@ -26,10 +26,10 @@ export default function HomePage() {
           {/* Description */}
           <p className="md:text-xl">
             {" "}
-            Welcome to my digital canvas, where innovation and creativity
-            converge. With a keen eye for aesthetics and a mastery of code, my
-            portfolio showcases a diverse collection of projects that reflect my
-            commitment to excellence.
+            Welcome to my portfolio, a place to show off some of my skills. With
+            an eye for aesthetics and a never stop learning attitude, my
+            portfolio showcases a collection of projects primarily using React
+            and Nextjs.
           </p>
           {/* Buttons */}
           <div className="w-full flex gap-4">

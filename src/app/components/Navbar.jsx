@@ -70,13 +70,13 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* Links */}
-      <div className="hidden md:flex gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/5">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
       </div>
       {/* Logo */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+      <div className="md:hidden lg:flex xl:w-1/5 xl:justify-center">
         <Link
           href="/"
           className="text-sm bg-black rounded-md p-1 w-36 font-semibold flex items-center justify-center"
@@ -90,7 +90,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* Social Links */}
-      <div className="hidden md:flex gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/10">
         <Link href="https://github.com/ThomassMathisen">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>

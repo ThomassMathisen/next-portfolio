@@ -41,14 +41,13 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl ">BIOGRAPHY</h1>
             {/* Bio DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-              fugiat quibusdam magni. Blanditiis ab earum nam reprehenderit, hic
-              exercitationem cupiditate, dolor cumque pariatur neque temporibus
-              rem architecto. Dolorem, nam tempore?
+              Petroleum Engineer turned Full-Stack Developer. I specialize in
+              Front-End using React to create beautiful web applications and
+              ensure success from my clients.
             </p>
             {/* Bio Quote */}
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              The happiness you are looking for, is in the work you're avoiding.
             </span>
             {/* Bio Sign SVG*/}
             <div className="self-end">
@@ -175,7 +174,7 @@ const AboutPage = () => {
                 Next.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                SASS
+                Sass
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
@@ -309,20 +308,16 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Product Owner
+                    Full Time Travel
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    In charge of monthly development cycles for two government
-                    applications
+                    Learning two languages fluently while immersing myself in
+                    new cultures. Almost 20 countries.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2018 - 2020{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Norwegian Civil Affairs Authority
+                    2021-2023
                   </div>
                 </div>
               </div>
@@ -332,16 +327,20 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Product Owner
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    In charge of monthly development cycles for two government
+                    applications
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2018-2020
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Norwegian Civil Affairs Authority
                   </div>
                 </div>
                 {/* CENTER */}
